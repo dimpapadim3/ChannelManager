@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="e44201b8-cdca-4c60-a12b-5b1f62c1e645" ChangeDateTime="01/19/2016 16:29:48">
+    <Property Name="ElementName" Value="[dbo].[ChannelsMessageQueueMessage].[Message]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ChannelsMessageQueueMessage]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MessageType" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="aea6bd4a-0ea0-4d5f-8c3b-3e2afe70e034" ChangeDateTime="01/26/2016 00:45:07">
+    <Property Name="ElementName" Value="[dbo].[ChannelsMessageQueueMessage].[ChannelId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ChannelsMessageQueueMessage]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ChannelName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="34b99189-fcd0-41dd-ad4a-beb882a561fc" ChangeDateTime="01/26/2016 03:01:15">
+    <Property Name="ElementName" Value="[dbo].[ChannelsMessageQueueMessage].[ProccessState]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ChannelsMessageQueueMessage]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ProccessingState" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e6c2ab65-191d-455b-8657-92e83997e624" ChangeDateTime="01/26/2016 16:23:29">
+    <Property Name="ElementName" Value="[dbo].[ChannelsMessageQueueMessage].[        public string NotificationState { get; set; }]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ChannelsMessageQueueMessage]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="        public string NotificationState" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="80c30226-01ae-4730-becc-01b13b2fca79" ChangeDateTime="01/26/2016 16:23:36">
+    <Property Name="ElementName" Value="[dbo].[ChannelsMessageQueueMessage].[        public string NotificationState]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ChannelsMessageQueueMessage]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationState" />
+  </Operation>
+</Operations>

@@ -1,0 +1,140 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelManagerService", "ChannelManagerService\ChannelManagerService.csproj", "{A7C22AEE-0434-4A52-B824-AE2F3F5EFEC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelManagerService.Tests", "ChannelManagerService.Tests\ChannelManagerService.Tests.csproj", "{9184BC90-A672-4C82-B20A-0CACD179BE5A}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ChannelManagerDataBase", "ChannelManagerDataBase\ChannelManagerDataBase.sqlproj", "{CCAA26A4-9520-4C34-AA26-94AFB2AAF0F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChannelManagerDataBase.Utilities", "ChannelManagerDataBase.Utilities", "{A5D604F1-3597-4A67-97FC-84EAA08D1F18}"
+	ProjectSection(SolutionItems) = preProject
+		SQLQueryHelpers.sql = SQLQueryHelpers.sql
+		SqlSchemaCompare1.scmp = SqlSchemaCompare1.scmp
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentActorProcessingModel", "ConcurrentActorProcessingModel\ConcurrentActorProcessingModel.csproj", "{FCC2C3AF-82D0-4189-8687-ABC27700B481}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelManagerService.DataAccess", "DataAccess\ChannelManagerService.DataAccess.csproj", "{7310228F-6C93-4EFF-AD0F-1DC7D8D281BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentActorProcessingModelTests", "ConcurrentActorProcessingModelTests\ConcurrentActorProcessingModelTests.csproj", "{ABF38AF1-999D-4956-B384-3A1371AFE757}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9EF06822-8383-46C7-BAA5-0232970F77AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelManagerService.ConsoleApplication", "ConsoleApplication1\ChannelManagerService.ConsoleApplication.csproj", "{BAC6B81A-84ED-4FB7-84C5-558DDB695AAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelManager.Domain", "ChannelManager.Domain\ChannelManager.Domain.csproj", "{386E5DDC-FCF8-4E3F-A589-3306BA2B926D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BookingCom", "BookingCom", "{2BF4C393-7B25-4E46-9B1B-44312A22A207}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pms", "Pms", "{5BC6F5C5-C882-4F03-915C-7458C08CCEE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpediaCom", "ExpediaCom", "{89B7DAC2-AB54-4F1C-A0CB-AFFD82EBD988}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingComWebService", "BookingComWebService\BookingComWebService.csproj", "{EA5A77AF-899C-4100-97C6-0D4B545E0A6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PmsWebService", "PmsWebService\PmsWebService.csproj", "{980609A2-3722-4139-855B-8585250A044C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7C22AEE-0434-4A52-B824-AE2F3F5EFEC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C22AEE-0434-4A52-B824-AE2F3F5EFEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7C22AEE-0434-4A52-B824-AE2F3F5EFEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7C22AEE-0434-4A52-B824-AE2F3F5EFEC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9184BC90-A672-4C82-B20A-0CACD179BE5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9184BC90-A672-4C82-B20A-0CACD179BE5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9184BC90-A672-4C82-B20A-0CACD179BE5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9184BC90-A672-4C82-B20A-0CACD179BE5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCAA26A4-9520-4C34-AA26-94AFB2AAF0F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCAA26A4-9520-4C34-AA26-94AFB2AAF0F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCAA26A4-9520-4C34-AA26-94AFB2AAF0F8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CCAA26A4-9520-4C34-AA26-94AFB2AAF0F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCAA26A4-9520-4C34-AA26-94AFB2AAF0F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCAA26A4-9520-4C34-AA26-94AFB2AAF0F8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FCC2C3AF-82D0-4189-8687-ABC27700B481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC2C3AF-82D0-4189-8687-ABC27700B481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC2C3AF-82D0-4189-8687-ABC27700B481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC2C3AF-82D0-4189-8687-ABC27700B481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7310228F-6C93-4EFF-AD0F-1DC7D8D281BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7310228F-6C93-4EFF-AD0F-1DC7D8D281BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7310228F-6C93-4EFF-AD0F-1DC7D8D281BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7310228F-6C93-4EFF-AD0F-1DC7D8D281BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABF38AF1-999D-4956-B384-3A1371AFE757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF38AF1-999D-4956-B384-3A1371AFE757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF38AF1-999D-4956-B384-3A1371AFE757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF38AF1-999D-4956-B384-3A1371AFE757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC6B81A-84ED-4FB7-84C5-558DDB695AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC6B81A-84ED-4FB7-84C5-558DDB695AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC6B81A-84ED-4FB7-84C5-558DDB695AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC6B81A-84ED-4FB7-84C5-558DDB695AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{386E5DDC-FCF8-4E3F-A589-3306BA2B926D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{386E5DDC-FCF8-4E3F-A589-3306BA2B926D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{386E5DDC-FCF8-4E3F-A589-3306BA2B926D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{386E5DDC-FCF8-4E3F-A589-3306BA2B926D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA5A77AF-899C-4100-97C6-0D4B545E0A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA5A77AF-899C-4100-97C6-0D4B545E0A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA5A77AF-899C-4100-97C6-0D4B545E0A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA5A77AF-899C-4100-97C6-0D4B545E0A6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{980609A2-3722-4139-855B-8585250A044C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980609A2-3722-4139-855B-8585250A044C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980609A2-3722-4139-855B-8585250A044C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980609A2-3722-4139-855B-8585250A044C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9184BC90-A672-4C82-B20A-0CACD179BE5A} = {9EF06822-8383-46C7-BAA5-0232970F77AA}
+		{ABF38AF1-999D-4956-B384-3A1371AFE757} = {9EF06822-8383-46C7-BAA5-0232970F77AA}
+		{BAC6B81A-84ED-4FB7-84C5-558DDB695AAE} = {9EF06822-8383-46C7-BAA5-0232970F77AA}
+		{EA5A77AF-899C-4100-97C6-0D4B545E0A6F} = {2BF4C393-7B25-4E46-9B1B-44312A22A207}
+		{980609A2-3722-4139-855B-8585250A044C} = {5BC6F5C5-C882-4F03-915C-7458C08CCEE8}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://channelmanagerservice.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ChannelManagerService.Tests\\ChannelManagerService.Tests.csproj
+		SccProjectTopLevelParentUniqueName1 = ChannelManager.sln
+		SccProjectName1 = ChannelManagerService.Tests
+		SccLocalPath1 = ChannelManagerService.Tests
+		SccProjectUniqueName2 = ChannelManagerService\\ChannelManagerService.csproj
+		SccProjectName2 = ChannelManagerService
+		SccLocalPath2 = ChannelManagerService
+		SccProjectUniqueName3 = ChannelManagerDataBase\\ChannelManagerDataBase.sqlproj
+		SccProjectName3 = ChannelManagerDataBase
+		SccLocalPath3 = ChannelManagerDataBase
+		SccProjectUniqueName4 = ConcurrentActorProcessingModel\\ConcurrentActorProcessingModel.csproj
+		SccProjectName4 = ConcurrentActorProcessingModel
+		SccLocalPath4 = ConcurrentActorProcessingModel
+		SccProjectUniqueName5 = ConcurrentActorProcessingModelTests\\ConcurrentActorProcessingModelTests.csproj
+		SccProjectTopLevelParentUniqueName5 = ChannelManager.sln
+		SccProjectName5 = ConcurrentActorProcessingModelTests
+		SccLocalPath5 = ConcurrentActorProcessingModelTests
+		SccProjectUniqueName6 = ConsoleApplication1\\ChannelManagerService.ConsoleApplication.csproj
+		SccProjectTopLevelParentUniqueName6 = ChannelManager.sln
+		SccProjectName6 = ConsoleApplication1
+		SccLocalPath6 = ConsoleApplication1
+		SccProjectUniqueName7 = DataAccess\\ChannelManagerService.DataAccess.csproj
+		SccProjectName7 = DataAccess
+		SccLocalPath7 = DataAccess
+		SccProjectUniqueName8 = ChannelManager.Domain\\ChannelManager.Domain.csproj
+		SccProjectName8 = ChannelManager.Domain
+		SccLocalPath8 = ChannelManager.Domain
+		SccProjectUniqueName9 = BookingComWebService\\BookingComWebService.csproj
+		SccProjectTopLevelParentUniqueName9 = ChannelManager.sln
+		SccProjectName9 = BookingComWebService
+		SccLocalPath9 = BookingComWebService
+		SccProjectUniqueName10 = PmsWebService\\PmsWebService.csproj
+		SccProjectTopLevelParentUniqueName10 = ChannelManager.sln
+		SccProjectName10 = PmsWebService
+		SccLocalPath10 = PmsWebService
+	EndGlobalSection
+EndGlobal

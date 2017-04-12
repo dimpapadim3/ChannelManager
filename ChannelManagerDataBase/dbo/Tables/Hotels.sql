@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Hotels] (
+    [Id] INT IDENTITY (1, 1) NOT NULL,
+    CONSTRAINT [PK__tmp_ms_x__3214EC0791D36291] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ChannelManagerService.DataAcccess.Room">
+    <Position X="10.75" Y="1.75" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ConcurrentActorProcessingModel.ActorSystem.ActorSystemReference" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ConcurrentActorProcessingModel.ActorSystem.ProcccesCoordinationActor" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ConcurrentActorProcessingModel.ActorSystem.ValidationResult" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ConcurrentActorProcessingModel.ActorSystem.ValidationActor" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ConcurrentActorProcessingModel.ActorSystem.BookingComWebService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcurrentActorProcessingModel.ActorSystem.Messages.ProccessIncomingMessage" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ConcurrentActorProcessingModel.ActorSystem.Messages.ProccessIncomingMessageResponse" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ConcurrentActorProcessingModel.ActorSystem.Messages.UpdateDbMessage" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ConcurrentActorProcessingModel.ActorSystem.Messages.ValidateIncomingMessage" Collapsed="true">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="ConcurrentActorProcessingModel.ActorSystem.ISendingWebService" Collapsed="true">
+    <Position X="4.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

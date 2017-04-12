@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FCC2C3AF-82D0-4189-8687-ABC27700B481}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConcurrentActorProcessingModel</RootNamespace>
+    <AssemblyName>ConcurrentActorProcessingModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Akka, Version=1.0.6.16, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akka.1.0.6\lib\net45\Akka.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Akka.DI.Core, Version=1.0.6.16, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akka.DI.Core.1.0.6\lib\net45\Akka.DI.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Akka.DI.Ninject, Version=1.0.6.16, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akka.DI.Ninject.1.0.6\lib\net45\Akka.DI.Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActorSystem\ActorSystemReference.cs" />
+    <Compile Include="ActorSystem\BookingComCommunicationActor.cs" />
+    <Compile Include="ActorSystem\ExpediaComCommunicationActor.cs" />
+    <Compile Include="ActorSystem\Messages\CancellationMessage.cs" />
+    <Compile Include="ActorSystem\Messages\NotifyChannelsMessage.cs" />
+    <Compile Include="ActorSystem\Messages\SendNotificationMessage.cs" />
+    <Compile Include="ActorSystem\ProcccesManagmentActor.cs" />
+    <Compile Include="ActorSystem\Messages\ProccessIncomingMessage.cs" />
+    <Compile Include="ActorSystem\Messages\ProccessIncomingMessageResponse.cs" />
+    <Compile Include="ActorSystem\Messages\UpdateDbMessage.cs" />
+    <Compile Include="ActorSystem\Messages\ValidateIncomingMessage.cs" />
+    <Compile Include="ActorSystem\ValidationActor.cs" />
+    <Compile Include="ActorSystem\PmsCommunicationActor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ActorSystem\readme1.md" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BookingComWebService\BookingComWebService.csproj">
+      <Project>{ea5a77af-899c-4100-97c6-0d4b545e0a6f}</Project>
+      <Name>BookingComWebService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ChannelManager.Domain\ChannelManager.Domain.csproj">
+      <Project>{386e5ddc-fcf8-4e3f-a589-3306ba2b926d}</Project>
+      <Name>ChannelManager.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\ChannelManagerService.DataAccess.csproj">
+      <Project>{7310228F-6C93-4EFF-AD0F-1DC7D8D281BC}</Project>
+      <Name>ChannelManagerService.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PmsWebService\PmsWebService.csproj">
+      <Project>{980609a2-3722-4139-855b-8585250a044c}</Project>
+      <Name>PmsWebService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
